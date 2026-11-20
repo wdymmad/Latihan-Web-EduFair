@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edu Fair & Career Day 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. SAMBUTAN -->
+    <header class="hero">
+        <p class="hero-label">Kepada Yth.</p>
+        <h2 id="nama">Tamu Undangan</h2>
+
+        <div class="hero-info">
+            <p id="instansi"></p>
+            <p id="kategori"></p>
+        </div>
+
+        <div class="divider"></div>
+
+        <h1>Edu Fair & Career Day 2026</h1>
+        <p class="tagline">Inovasi dan Kreativitas dalam Pendidikan</p>
+
+        <a href="#rsvp" class="btn-hero">Konfirmasi kehadiran</a>
+    </header>
+
+    <!-- 2. WAKTU DAN TEMPAT -->
+    <section class="schedule">
+        <h2>Waktu dan Tempat</h2>
+        <p><strong>Tanggal:</strong> 15 Maret 2026</p>
+        <p><strong>Waktu:</strong> 09:00 - 17:00</p>
+        <p><strong>Tempat:</strong> Gedung Utama Universitas</p>
+    </section>
+
+    <!-- 3. PETA -->
+    <section class="map">
+        <h2>Peta Lokasi</h2>
+        <p>Tempat acara berada di Gedung Utama Universitas.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.123456789!2d106.827153!3d-6.175110!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5b8c8b8b8b%3A0x123456789abcdef0!2sGedung%20Utama%20Universitas!5e0!3m2!1sid!2sid!4v1612345678901" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!-- 4. RUNDOWN -->
+    <section class="rundown">
+        <h2>Rundown Acara</h2>
+        <ul>
+            <li>09:00 - 09:30: Pembukaan</li>
+            <li>09:30 - 12:00: Pameran Pendidikan</li>
+            <li>12:00 - 13:00: Makan Siang</li>
+            <li>13:00 - 15:00: Seminar Karier</li>
+            <li>15:00 - 17:00: Networking dan Penutupan</li>
+        </ul>
+    </section>
+
+    <!-- 5. RSVP -->
+    <section class="rsvp" id="rsvp">
+        <h2>Konfirmasi kehadiran</h2>
+
+        <form id="formRsvp">
+            <label for="rsvpNama">Nama lengkap</label>
+            <input type="text" id="rsvpNama" required>
+
+            <label for="rsvpHadir">Kehadiran</label>
+            <select id="rsvpHadir" required>
+                <option value="" disabled selected>Pilih salah satu</option>
+                <option value="Hadir">Hadir</option>
+                <option value="Tidak hadir">Tidak hadir</option>
+            </select>
+
+            <label for="rsvpJumlah">Jumlah perwakilan</label>
+            <input type="number" id="rsvpJumlah" min="1" max="10" value="1" required>
+
+            <button type="submit">Kirim konfirmasi</button>
+        </form>
+
+        <p id="pesanRsvp" class="rsvp-pesan"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
